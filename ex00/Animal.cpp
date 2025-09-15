@@ -2,7 +2,12 @@
 #include <iostream>
 #include <string>
 
-Animal::Animal(): 
+Animal::Animal()
+{
+	std::cout << "Animal created" << std::endl;
+}
+
+Animal::Animal(std::string type): type(type)
 {
 	std::cout << "Animal created" << std::endl;
 }
@@ -12,12 +17,12 @@ Animal::~Animal()
 	std::cout << "Animal destroyed" << std::endl;
 }
 
-void	Animal::makeSound(void)
+void	Animal::makeSound(void) const
 {
-	if (type == "Cat")
-		std::cout << "Miau!" << std::endl;
-	else if (type == "Dog")
-		std::cout << "Wuff!" << std::endl;
-	else
-		std::cout << "What does the Fox say?" << std::endl;
+	std::cout << "Animal sounds!" << std::endl;
+}
+
+std::string	Animal::getType(void) const
+{
+	return (type);
 }

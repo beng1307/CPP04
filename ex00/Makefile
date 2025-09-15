@@ -1,6 +1,7 @@
 COMPILE = c++ -g -Wall -Wextra -Werror -std=c++98
 NAME = polymorphism
-SRCS = main.cpp
+SRCS = main.cpp Animal.cpp Cat.cpp Dog.cpp \
+		WrongAnimal.cpp WrongCat.cpp
 OBJS_FOLDER = obj
 OBJS = $(SRCS:%.cpp=$(OBJS_FOLDER)/%.o)
 
