@@ -1,6 +1,6 @@
 COMPILE = c++ -g -Wall -Wextra -Werror -std=c++98
 NAME = world_on_fire
-SRCS = main.cpp
+SRCS = main.cpp Animal.cpp Brain.cpp Cat.cpp Dog.cpp
 OBJS_FOLDER = obj
 OBJS = $(SRCS:%.cpp=$(OBJS_FOLDER)/%.o)
 

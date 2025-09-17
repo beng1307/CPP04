@@ -12,7 +12,7 @@ Brain::~Brain()
 	std::cout << "Brain class destroyed!" << std::endl;
 }
 
-void	Brain::add_idea(std::string &idea)
+void	Brain::add_idea(std::string idea)
 {
 	int index = 0;
 
@@ -20,4 +20,10 @@ void	Brain::add_idea(std::string &idea)
 		index++;
 	if (index < 100)
 		ideas[index] = idea;
+}
+
+void	Brain::print_ideas()
+{
+	for (int i = 0; i < 100 && !ideas[i].empty(); i++)
+		std::cout << ideas[i] << std::endl;	
 }

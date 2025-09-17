@@ -15,7 +15,9 @@ class	Cat: public Animal
 		Cat();
 		~Cat();
 
+		Cat		&operator=(const Cat &to_copy);
 		void	makeSound(void) const;
+		Brain	*access_brain();
 };
 
 #endif

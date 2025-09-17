@@ -8,7 +8,7 @@ Cat::Cat(): Animal("Cat")
 
 Cat::~Cat()
 {
-	std::cout << "A cat passed away!" << std::endl;
+	std::cout << "Cat class destroyed!" << std::endl;
 }
 
 void	Cat::makeSound(void) const

@@ -14,7 +14,8 @@ class	Brain
 		Brain();
 		~Brain();
 
-		void	add_idea(std::string &idea);
+		void		add_idea(std::string idea);
+		void		print_ideas();
 };
 
 #endif
