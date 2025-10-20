@@ -13,6 +13,8 @@ class	Animal
 
 		Animal();
 		Animal(std::string type);
+		Animal(const Animal &to_copy);
+		Animal	&operator=(const Animal &to_copy);
 		virtual ~Animal();
 
 		virtual void	makeSound(void) const;
